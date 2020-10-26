@@ -215,6 +215,7 @@
         var rest = period - time;
         $("#time").html("経過時間：" + time);
         $("#remain").html("残り時間：" + rest);
+        $("#blank").html("タイマー：" + parseInt($("#minute").val()) + "分")
         analog(rest);
       }
       if(rest <= 0){
